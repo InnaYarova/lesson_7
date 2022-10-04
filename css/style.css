@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@font-face{
+	font-family: "Comfortaa";
+	src: url("../fonts/Comfortaa-Regular.woff2") format("woff2"),url("../fonts/Comfortaa-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+	@font-face{
+		font-family: "Comfortaa";
+		src: url("../fonts/Comfortaa-Bold.woff2") format("woff2"),url("../fonts/Comfortaa-Bold.woff") format("woff");
+		font-display: swap;
+		font-weight: 700;
+		font-style: normal;
+	}
+/*Обнулення (reset)*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+/*Стилізація*/
+[class*="container"]{
+	max-width: 814px;
+	margin: 0 auto;
+}
+
+.container {
+	font-family: lato;
+	color: #424551;
+}
+
+.title {
+font-weight: 900;
+font-size: 46px;
+line-height: 130%;
+margin-bottom: 35px;
+}
+.image {
+	margin-bottom: 65px;
+}
+.image img {
+	max-width: 100%;
+}
+.lead {
+font-weight: 700;
+font-size: 20px;
+line-height: 150%;
+color: #1E212C;
+margin-bottom: 24px;
+}
+.text {
+font-size: 16px;
+line-height: 160%;
+margin-bottom: 48px;
+}
+.text p{
+	margin-bottom: 24px;
+}
+.backdown {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	padding-left: 58px;
+	margin-bottom: 48px;
+}
+.list {
+	font-size: 16px;
+	line-height: 160%;
+	margin-bottom: 24px;
+}
+.list p{
+	margin-bottom: 24px;
+}
+.list li{
+	margin-bottom: 4px;
+	padding-left: 32px;
+}
+
+/*Відпрацювання навичок з властивістю background*/
+.content {
+	color: rgb(2, 48, 48);
+	font-family: Comfortaa;
+}
+.content p {
+	text-indent: 24px;
+}
+.content li{
+padding-left: 20px;
+}
+.background{
+	background-image: url('../img/fon_background2.jpg');
+	background-attachment: fixed;
+	background-size: contain;
+	padding-bottom: 15px;
+}
+
+h2{
+	margin-bottom: 14px;
+	text-align: center;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: red;
+	text-shadow: 3px 4px 4px rgb(104, 103, 105);
+	font-weight: 700;
+	letter-spacing: 8px;
+	background-color: aqua;
+}
+.copyright {
+	margin-bottom: 24px;
+	background-color: rgba(85, 219, 23, 0.87);
+}
+.decoration {
+	color: blue;
+	font-weight: 700;
+}
+.background-color {
+	background-color: rgba(116, 233, 155, 0.8);
+	margin-bottom: 24px;
+}
+.uppercase {
+	text-align: center;
+	color: rgb(10, 5, 24);
+	text-shadow: 3px 4px 4px  rgb(104, 103, 105);
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+.underline{
+	text-decoration: underline;
+}
+.background-image {
+	background-image: url("../img/fon.jpg");
+	margin-bottom: 24px;
+}
+.background-repeat {
+	margin-bottom: 24px;
+	background-image: url("../img/repeat.jpg");
+	border-radius: 30px;
+}
+.block{
+font-size: 17px;
+font-weight: 700;
+line-height: 25px;
+text-align: center;
+color: rgb(105, 6, 6);
+}
+.repeat-x {
+	width: 200px;
+	height: 110px;
+	border: 3px solid blue;
+	background-image: url("../img/eyes.png");
+	background-repeat: repeat-x;
+	color: rgb(105, 6, 6);
+	border-radius: 0px 0px 0px 30px;
+	display: inline-block;
+	padding-top: 7px;
+	overflow: auto;
+	vertical-align: bottom;
+}
+.repeat-y {
+	width: 200px;
+	height: 110px;
+	border: 3px solid blue;
+	background-image: url("../img/smile.jpg");
+	background-repeat: repeat-y;
+	color: rgb(105, 6, 6);
+	display: inline-block;
+	padding-left: 40px;
+	overflow: auto;
+	vertical-align: bottom;
+}
+.space{
+	width: 199px;
+	height: 110px;
+	border: 3px solid blue;
+	background-image: url("../img/smile.jpg");
+	background-repeat: space;
+	color: rgb(16, 9, 122);
+	display: inline-block;
+	padding-top: 20px;
+	overflow: auto;
+	vertical-align: bottom;
+}
+.round{
+	width: 199px;
+	height: 110px;
+	border: 3px solid blue;
+	background-image: url("../img/smile.jpg");
+	background-repeat: round;
+	color: rgb(16, 9, 122);
+	display: inline-block;
+	border-radius: 0px 0px 30px 0px;
+	padding-top: 20px;
+	overflow: auto;
+	vertical-align: bottom;
+}
+.background-position {
+	margin-bottom: 24px;
+	background-color: antiquewhite;
+	background: #f5f100da url('../img/fon_position.png') no-repeat top right / 150px;
+}
+.background-attachment {
+	margin-bottom: 24px;
+	background: linear-gradient(0deg, rgba(244,250,4,1) 0%, rgba(239,249,8,1) 31%, rgba(193,199,53,1) 39%, rgba(55,188,131,1) 51%, rgba(20,76,185,1) 89%, rgba(45,87,253,1) 100%);
+}
+.background-size {
+	background: rgb(21, 121, 235) url("../img/fon_size.png") no-repeat center / 250px;
+	color: rgb(66, 5, 145);
+}
+footer{
+	background: linear-gradient(0deg, rgba(244,250,4,1) 0%, rgba(239,249,8,1) 31%, rgba(193,199,53,1) 39%, rgba(55,188,131,1) 51%, rgba(20,76,185,1) 89%, rgba(45,87,253,1) 100%);
+	font-size: 25px;
+	text-align: center;
+	color: rgb(3, 3, 121);
+}
+
